@@ -14,7 +14,7 @@
 
 ## 环境要求
 
-- Python 3.14（仓库里的 `.venv/` 就是这个版本）
+- Python 3
 - macOS / Linux，需要可用的麦克风和扬声器
 - PyAudio 依赖 PortAudio，macOS 上可用 `brew install portaudio` 安装
 - 两个 API Key：
@@ -32,11 +32,12 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-仓库根目录已经放好了运行需要的模型文件：
+仓库根目录放置运行需要的模型文件：
+
+例如：
 
 - `vosk-model-small-cn-0.22/` — Vosk 中文识别模型
 - `zh_CN-huayan-medium.onnx` + `.json` — Piper 中文 TTS 音色（当前使用）
-- `zh_CN-xiao_ya-medium.onnx` + `.json` — 备用音色，默认未启用
 
 如果是从 git 重新拉的、模型文件不在，可以分别从 [Vosk 模型库](https://alphacephei.com/vosk/models) 和 [Piper 音色库](https://github.com/rhasspy/piper/blob/master/VOICES.md) 下载，放回原路径即可。
 
